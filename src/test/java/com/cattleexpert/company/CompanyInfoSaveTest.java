@@ -1,0 +1,71 @@
+package com.cattleexpert.company;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.MethodRule;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import ch.vorburger.webdriver.reporting.LoggingTestWatchman;
+
+import com.cattlexpet.objects.CattlePageObjects;
+import com.cattlexpet.objects.CompanyPageObjects;
+import com.cattlexpet.objects.LoginPageObjects;
+import com.uprr.selenium.impl.DefaultEventCaptureImpl;
+import com.uprr.selenium.impl.DefaultPageFactoryImpl;
+import com.uprr.selenium.impl.DefaultSeleniumAttributesImpl;
+import com.uprr.selenium.impl.DriverFactoryImpl;
+import com.uprr.selenium.interfaces.DriverFactory;
+import com.uprr.selenium.interfaces.SeleniumAttributesFactory;
+import com.uprr.selenium.interfaces.UIPageFactory;
+
+public class CompanyInfoSaveTest {
+
+	public DriverFactory factory;
+	private SeleniumAttributesFactory seleniumAttributes;
+	private UIPageFactory pkrmPageFactory;
+	private static final String URL = "http://172.16.11.80/cattlexpert.ui/CompanyInfo.aspx#?menuName=System_Setup#lnk#";
+
+	private LoginPageObjects loginPageObject;
+
+	@Rule
+	public MethodRule logRule = new LoggingTestWatchman(
+			DriverFactoryImpl.LOG_FILE_WRITER);
+
+	@Before
+	public void setUp() {
+		/*
+		 * System.setProperty("webdriver.ie.driver",
+		 * "./src/test/resources/driverfiles/IEDriverServer.exe");
+		 */
+		factory = DriverFactoryImpl.getInstance();
+		WebDriver webDriver = new FirefoxDriver();
+		seleniumAttributes = new DefaultSeleniumAttributesImpl(webDriver, URL);
+		webDriver = new DefaultEventCaptureImpl(webDriver).captureEevnt(URL,
+				true);
+		pkrmPageFactory = new DefaultPageFactoryImpl(webDriver);
+		webDriver.manage().window().maximize();
+
+		loginPageObject = pkrmPageFactory.getPage(LoginPageObjects.class);
+		loginPageObject.setSeleniumAttributes(seleniumAttributes);
+	}
+
+	
+	@Test
+	public void companyInfoSaveTest() {
+		
+		CompanyPageObjects Cattlecompany =pkrmPageFactory.getPage(CompanyPageObjects.class);
+		Cattlecompany.setSeleniumAttributes(seleniumAttributes);		
+		loginPageObject.userLogin("cattle", "cattle");
+		Cattlecompany.companyInfoSave("Hyderabad", "abc@bbc.com", "Hitechcity");
+	}
+
+	@After
+    public void tearDown() {
+        seleniumAttributes.getWebDriver().quit();
+    }    
+	
+
+}

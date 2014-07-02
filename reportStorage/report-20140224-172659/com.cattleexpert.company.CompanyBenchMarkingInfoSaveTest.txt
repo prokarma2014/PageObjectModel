@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cattleexpert.company.CompanyBenchMarkingInfoSaveTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.728 sec

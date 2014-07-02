@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.cattleexpert.company.CompanyInfoSaveTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.991 sec <<< FAILURE!
+companyInfoSaveTest(com.cattleexpert.company.CompanyInfoSaveTest)  Time elapsed: 35.991 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 20 seconds waiting for visibility of element located by By.xpath: //a[text()='System Setup']/ancestor::li/descendant::li/a[text()='Company']
+Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
+System info: host: 'rchunduri', ip: '172.16.101.243', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_40'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.uprr.selenium.common.WaitForElements.waitForElementVisibiltyByAttribute(WaitForElements.java:19)
+	at com.cattlexpet.objects.CompanyPageObjects.companyInfoSave(CompanyPageObjects.java:70)
+	at com.cattleexpert.company.CompanyInfoSaveTest.companyInfoSaveTest(CompanyInfoSaveTest.java:62)
+

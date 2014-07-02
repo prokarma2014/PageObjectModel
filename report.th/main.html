@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Test History Main Frame</title>
+  <LINK REL ="stylesheet" TYPE="text/css" HREF="css/style.css" TITLE="Style"/>
+  <script src="js/tablesort.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    function sortTables() {
+      var runTable = new TableSort;
+      var moduleTable = new TableSort;
+      runTable.init("run_table");
+      moduleTable.init("module_table");
+    }
+    window.onload = sortTables;
+  </script>
+</head>
+<body class="bg2">
+<TABLE class="mainAnchors" width="100%">
+  <TR>
+    <TD><CENTER><a href="#runs">RUNS</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="#packages">PACKAGES</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="#modules">MODULES</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="#totals">TOTALS</a></CENTER></TD>
+  </TR>
+</TABLE>
+<TABLE width="90%"><TR><TD>
+  <TABLE class="topcontainer" cellspacing="4">
+    <TR>
+      <TD valign="top">
+        <TABLE class="sum" cellspacing="4">
+          <TR><TD class="sumhdr" colspan="2">Test&nbsp;history&nbsp;overview</TD></TR>
+          <TR><TD class="summid">&nbsp;Number&nbsp;of&nbsp;runs&nbsp;</TD><TD class="summid">6 </TD></TR>
+          <TR><TD class="summid">&nbsp;Last&nbsp;run&nbsp;</TD><TD class="summid"> 2014-02-25&nbsp;12:04:51 </TD></TR>
+          <TR><TD class="summid">&nbsp;Number&nbsp;of&nbsp;packages&nbsp;</TD><TD class="summid"> 3 </TD></TR>
+          <TR><TD class="summid">&nbsp;Number&nbsp;of&nbsp;unique&nbsp;test&nbsp;modules&nbsp;</TD><TD class="summid"> 11 </TD></TR>
+          <TR><TD class="summid">&nbsp;Number&nbsp;of&nbsp;unique&nbsp;test&nbsp;cases&nbsp;</TD><TD> 11 </TD></TR>
+          <TR><TD class="summid">&nbsp;Best&nbsp;run&nbsp;</TD><TD class="summid"> 100.00% </TD></TR>
+          <TR><TD class="summid">&nbsp;Worst&nbsp;run&nbsp;</TD><TD class="summid"> 0.00% </TD></TR>
+          <TR><TD class="sumbottom">&nbsp;Average&nbsp;pass&nbsp;rate&nbsp;</TD><TD class="sumbottom"><b>65.15% </b></TD></TR>
+        </TABLE>
+      </TD>
+      <TD VALIGN="top" rowspan="2">
+        <TABLE class="imageholder" cellspacing="4">
+          <TR><TD valign="top" class="sumhdr" align="center">Pass&nbsp;rates&nbsp;-&nbsp;all&nbsp;runs</TD></TR>
+          <TR><TD><TABLE cellpadding="4">
+            <TR><TD><img src="./images/th.png"/></TD></TR>
+          </TABLE></TD></TR>
+          <TR><TD class="sumhdr" valign="top" align="center">Number&nbsp;of&nbsp;test&nbsp;cases</TD></TR>
+          <TR><TD><TABLE cellpadding="4">
+            <TR><TD><img src="./images/tc.png"/></TD></TR>
+          </TABLE></TD></TR>
+        </TABLE>
+      </TD>
+      <TD VALIGN="top" rowspan="2">
+        <TABLE class="imageholder" cellspacing="4">
+          <TR><TD valign="top" class="sumhdr" align="center">Non&nbsp;passing&nbsp;test&nbsp;cases</TD></TR>
+            <TR><TD><TABLE cellpadding="4">
+              <TR><TD><img src="./images/fn.png"/></TD></TR>
+            </TABLE></TD></TR>
+        </TABLE>
+      </TD>
+    </TR>
+    <TR>
+      <TD valign="top">
+        <TABLE class="sum">
+          <TR><TD class="sumhdr" colspan="3">Trends</TD></TR>
+          <TR><TD class="summid">&nbsp;Pass&nbsp;rate&nbsp;trend&nbsp;last&nbsp;run&nbsp;</TD><TD class="prTrend">+100.00%</TD><TD align="right" valign="middle"><IMG src="images/trend-up.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="summid">&nbsp;Pass&nbsp;rate&nbsp;trend&nbsp;last&nbsp;5&nbsp;runs&nbsp;</TD><TD class="prTrend">0.00%</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="summid">&nbsp;Pass&nbsp;rate&nbsp;trend&nbsp;last&nbsp;10&nbsp;runs&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="summid">&nbsp;Pass&nbsp;rate&nbsp;trend&nbsp;last&nbsp;3&nbsp;days&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="summid">&nbsp;Pass&nbsp;rate&nbsp;trend&nbsp;last&nbsp;7&nbsp;days&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="summid">&nbsp;Test&nbsp;case&nbsp;trend&nbsp;last&nbsp;3&nbsp;days&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="sumid">&nbsp;Test&nbsp;case&nbsp;trend&nbsp;last&nbsp;7&nbsp;days&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="sumid">&nbsp;Failure&nbsp;trend&nbsp;last&nbsp;3&nbsp;days&nbsp;</TD><TD class="prTrend">NA</TD><TD align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+          <TR><TD class="sumbottom">&nbsp;Failure&nbsp;trend&nbsp;last&nbsp;7&nbsp;days&nbsp;</TD><TD class="prTrendBottom">NA</TD><TD class="prTrendBottom" align="right" valign="middle"><IMG src="images/trend-same.jpg" height="16" width="16"></TD></TR>
+        </TABLE>
+      </TD>
+    </TR>
+  </TABLE>
+<br>
+<a name="runs"/><H3 class="title">Runs</H3>
+For individual runs and if regular test reports have been generated click on the run.
+<br><br>
+  <TABLE id='run_table' class="sortable" cellspacing="0" cellpadding="2">
+    <THEAD>
+      <TR>
+        <TH class="graphHeaderLeftAsc" abbr="input_text">Run</TH>
+        <TH class="graphHeader" abbr="input_text">Path</TH>
+        <TH class="graphHeader" abbr="number">Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Pass&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Error&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Fail&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="date" NOWRAP>Exec&nbsp;date</TH>
+        <TH class="graphHeader" abbr="float">Exec&nbsp;time&nbsp;(sec)&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" align="left" colspan="2" abbr="percent">TOTAL</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-6</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140225-120452</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-25&nbsp;12:04:51</TD>
+        <TD class="graphPercent" align="center">17.754</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-5</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140225-115638</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-25&nbsp;11:56:36</TD>
+        <TD class="graphPercent" align="center">26.719</TD>
+        <TD class="graphBarLeft" align="right">0.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prfail"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-4</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140225-114248</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-25&nbsp;11:42:32</TD>
+        <TD class="graphPercent" align="center">33.340</TD>
+        <TD class="graphBarLeft" align="right">0.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prfail"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-3</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140225-111535</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-25&nbsp;11:15:32</TD>
+        <TD class="graphPercent" align="center">93.859</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-2</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140224-195515</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-24&nbsp;07:55:07</TD>
+        <TD class="graphPercent" align="center">23.259</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>Run-1</TD>
+        <TD class="graphItem" NOWRAP>reportStorage/report-20140224-172659</TD>
+        <TD class="graphPercent" align="center">11</TD>
+        <TD class="graphPercent" align="center">10</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>2014-02-24&nbsp;05:22:49</TD>
+        <TD class="graphPercent" align="center">263.518&nbsp;(~4min)</TD>
+        <TD class="graphBarLeft" align="right">90.91%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="180" height="12"/></TD>
+                <TD class="prfail"><img src="images/trans.gif" width="20" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+<br>
+<a name="packages"/><H3 class="title">Test packages</H3>
+This list shows the average pass rate for test packages. For individual package executions click on the package name.<br/><br/>
+  <TABLE id='package_table' class="sortable" cellspacing="0" cellpadding="2">
+    <THEAD>
+      <TR>
+        <TH class="graphHeaderLeftAsc" abbr="input_text">Package&nbsp;name</TH>
+        <TH class="graphHeader" abbr="number">Runs&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Unique&nbsp;Test&nbsp;Modules&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Unique&nbsp;Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Exec.&nbsp;Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Pass&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Error&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Fail&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="float">Exec&nbsp;time&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" align="left" colspan="2" abbr="percent">TOTAL</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-package-com.cattle.login.html">com.cattle.login</a></TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">4</TD>
+        <TD class="graphPercent" align="center">2</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">35.045</TD>
+        <TD class="graphBarLeft" align="right">66.67%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="132" height="12"/></TD>
+                <TD class="prfail"><img src="images/trans.gif" width="68" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-package-com.cattleexpert.cattle.html">com.cattleexpert.cattle</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">4</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">4</TD>
+        <TD class="graphPercent" align="center">4</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">86.673</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-package-com.cattleexpert.company.html">com.cattleexpert.company</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">5</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">161.504</TD>
+        <TD class="graphBarLeft" align="right">83.33%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="166" height="12"/></TD>
+                <TD class="prfail"><img src="images/trans.gif" width="34" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+<br>
+<a name="modules"/><H3 class="title">Test modules</H3>
+This list shows the average pass rate for test objects/modules. For individual module executions click on the module name.<br/><br/>
+  <TABLE id='module_table' class="sortable" cellspacing="0" cellpadding="2">
+    <THEAD>
+      <TR>
+        <TH class="graphHeaderLeftAsc" abbr="input_text">Module&nbsp;name</TH>
+        <TH class="graphHeader" abbr="number">Runs&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Unique&nbsp;Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Exec.&nbsp;Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Pass&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Error&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Fail&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="float">Exec&nbsp;time&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" align="left" colspan="2" abbr="percent">TOTAL</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattle.login.LoginTest.html">com.cattle.login.LoginTest</a></TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">6</TD>
+        <TD class="graphPercent" align="center">4</TD>
+        <TD class="graphPercent" align="center">2</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">35.045</TD>
+        <TD class="graphBarLeft" align="right">66.67%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="132" height="12"/></TD>
+                <TD class="prfail"><img src="images/trans.gif" width="68" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.cattle.CattleCarcassGridSaveTest.html">com.cattleexpert.cattle.CattleCarcassGridSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">21.105</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.cattle.CattleCattleBaseWeightSaveTest.html">com.cattleexpert.cattle.CattleCattleBaseWeightSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">22.412</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.cattle.CattleFleshSaveTest.html">com.cattleexpert.cattle.CattleFleshSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">20.758</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.cattle.CattlePlacesSaveTest.html">com.cattleexpert.cattle.CattlePlacesSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">22.398</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyAccountingInfoSaveTest.html">com.cattleexpert.company.CompanyAccountingInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">21.188</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyBenchMarkingInfoSaveTest.html">com.cattleexpert.company.CompanyBenchMarkingInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">31.728</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyGeneralInfoSaveTest.html">com.cattleexpert.company.CompanyGeneralInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">21.489</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyInfoSaveTest.html">com.cattleexpert.company.CompanyInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">35.991</TD>
+        <TD class="graphBarLeft" align="right">0.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prfail"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyMetricInfoSaveTest.html">com.cattleexpert.company.CompanyMetricInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">21.319</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP><a href="th-module-com.cattleexpert.company.CompanyProcessingInfoSaveTest.html">com.cattleexpert.company.CompanyProcessingInfoSaveTest</a></TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">1</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="left">29.789</TD>
+        <TD class="graphBarLeft" align="right">100.00%</TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="200" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+<br>
+<a name="totals"/><H3 class="title">Test module execution totals</H3>
+This is a summary of all executed test in all runs.<br><br>
+  <TABLE cellspacing="0" cellpadding="2">
+    <THEAD>
+      <TR>
+        <TH class="graphHeaderLeft" abbr="input_text">Run</TH>
+        <TH class="graphHeader" abbr="input_text">Path</TH>
+        <TH class="graphHeader" abbr="number">Tests&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Pass&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Error&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="number">Fail&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" abbr="date" NOWRAP>Exec&nbsp;date</TH>
+        <TH class="graphHeader" abbr="float">Exec&nbsp;time&nbsp;(sec)&nbsp;&nbsp;</TH>
+        <TH class="graphHeader" align="left" colspan="2" abbr="percent">TOTAL</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD class="graphItemLeft" NOWRAP>TOTALS</TD>
+        <TD class="graphPercent" align="center">NA</TD>
+        <TD class="graphPercent" align="center">16</TD>
+        <TD class="graphPercent" align="center">13</TD>
+        <TD class="graphPercent" align="center">3</TD>
+        <TD class="graphPercent" align="center">0</TD>
+        <TD class="graphPercent" align="center" NOWRAP>NA</TD>
+        <TD class="graphPercent" align="center">458.449&nbsp;(~8min)</TD>
+        <TD class="graphBarLeft" align="right"><B>65.15%</B></TD>
+        <TD class="graphBar">
+          <TABLE class="barGraph" cellspacing="0">
+            <TBODY>
+              <TR class="bar">
+                <TD class="prpass"><img src="images/trans.gif" width="130" height="12"/></TD>
+                <TD class="prfail"><img src="images/trans.gif" width="70" height="12"/></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</TD></TR></TABLE>
+</body>
+</html>
